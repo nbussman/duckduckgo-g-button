@@ -1,0 +1,15 @@
+ {
+  "manifest_version": 2,
+  "version":"2",
+	"name": "Duckduckgo Google Search Button ",
+  "description": "This extension adds a button to the duckduckgo search view to search with google.",
+  "browser_action": {
+    "name": "Duckduckgo Google Search Button ",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.1.4.min.js", "background.js" ],
+    "matches": [ "http://duckduckgo.com/*", "https://duckduckgo.com/*"]
+  }]
+}
